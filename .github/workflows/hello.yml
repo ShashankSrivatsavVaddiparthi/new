@@ -1,0 +1,13 @@
+name: Hello World Action  # Name shown in GitHub UI
+
+on: [push]  # Triggers on any push to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free virtual machine (runner) to run on
+    steps:
+      - name: Checkout code  # Step 1: Grab your repo files
+        uses: actions/checkout@v4  # Reusable "action" from GitHub
+
+      - name: 25ds1000067@ds.study.iitm.ac.in  # YOUR REQUIRED STEP (use your real email)
+        run: echo "Hello from GitHub Actions! Email step executed."  # Simple command
